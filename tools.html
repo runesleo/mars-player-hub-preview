@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tools — Mars Player Hub</title><link rel="stylesheet" href="./styles.css"></head><body>
+<header class="nav"><a class="brand" href="./index.html">Mars Player Hub</a><nav aria-label="主导航"><a href="./start.html">新手入门</a><a class="active" href="./tools.html">工具</a><a href="./wallet.html">钱包助手</a><a href="./faq.html">问答</a><a href="./updates.html">更新</a></nav></header>
+<main class="shell"><section class="hero"><p class="eyebrow">Player tools</p><h1>算你自己的 Mars。</h1><p class="lede">不看别人的仓位。先选你想解决的问题。基础参数就能开始算；Gas、OIL、额外 bonus 等放在“高级参数”里。所有计算都在浏览器本地完成，不连接钱包、不签名。</p><div id="tool-source" class="sourcebar"></div></section>
+
+<nav class="tool-jump" aria-label="工具快速导航">
+  <a href="#pnl">回本</a><a href="#rig">Rig</a><a href="#ore">Ore</a><a href="#upgrade">升级</a><a href="#epoch">Epoch</a>
+</nav>
+
+<div class="tool-grid">
+<section id="pnl" class="tool"><span class="tag">01 · Personal</span><h2>我回本了吗？</h2><p>把已回收现金和当前资产保守估值分开。所有输入必须使用同一种单位。</p>
+<form id="pnl-form" class="form-grid">
+  <label>计算单位<select name="unit"><option value="USD">USD</option><option value="USDT">USDT</option><option value="DRILL">DRILL</option></select></label>
+  <label>累计投入<input name="invested" type="number" step="0.01" min="0" required placeholder="例如 1000"></label>
+  <label>已回收 / 已卖出<input name="realized" type="number" step="0.01" min="0" value="0"></label>
+  <label>当前流动资产价值<input name="liquid" type="number" step="0.01" min="0" value="0"></label>
+  <label>非流动资产保守估值<input name="illiquid" type="number" step="0.01" min="0" value="0"></label>
+  <button class="btn primary" type="submit">计算回本</button>
+</form>
+<p class="helper">例：如果选择 USD，四个金额都用 USD；不要把 DRILL 数量和美元价值混在一起。</p>
+<div id="pnl-result" class="result muted">输入累计投入后即可计算。</div><div class="actions"><button id="pnl-copy" data-track="copy_pnl" class="btn" disabled>复制结果摘要</button></div></section>
+
+<section id="rig" class="tool"><span class="tag">02 · Rig</span><h2>这档钻机（Rig）值不值？</h2><p>官方概率计算期望 Base DRILL。先告诉工具你是在自己的 Plot，还是别人的 open plot。</p>
+<form id="rig-form">
+  <div class="form-grid">
+    <label>钻机档位（Rig Tier）<select name="tier" class="rig-select"></select></label>
+    <label>参与方式<select name="ownershipMode" class="ownership-mode"><option value="own">我在自己的地块（Plot）上挖</option><option value="guest">我在别人的开放地块（Open Plot）上挖</option></select></label>
+    <label class="own-plot-field">自己的地块等级（Plot Level）<select name="plotLevel" class="level-select"></select></label>
+    <label>矿石（Ore）预计税前可卖总价（DRILL）<input name="oreGrossValue" type="number" step="0.01" min="0" value="0"></label>
+  </div>
+  <p class="helper">不知道 Ore 值多少先填 0，先看纯 DRILL 现金账。访客模式不会自动把地主 owner bonus 算到你头上。</p>
+  <details class="advanced"><summary>高级参数（可选）</summary><div class="form-grid">
+    <label>Gas 折算 DRILL<input name="gasDrill" type="number" step="0.01" min="0" value="0"></label>
+    <label>每 OIL 自定义估值<input name="oilValuePerUnit" type="number" step="0.01" min="0" value="0"></label>
+    <label>其他已确认 Bonus（DRILL）<input name="extraBonusDrill" type="number" step="0.01" min="0" value="0"></label>
+  </div><p class="helper">OIL 默认按 0 计价。只有你有明确估值依据时才填写。</p></details>
+  <button class="btn primary" type="submit">算这轮</button>
+</form>
+<div id="rig-result" class="result muted">默认从最保守口径开始。</div><div class="actions"><button id="rig-copy" data-track="copy_rig" class="btn" disabled>复制结果摘要</button></div></section>
+
+<section id="ore" class="tool"><span class="tag">03 · Ore</span><h2>矿石（Ore）买还是自己挖？</h2><p>同时比较直接买入的 DRILL 成本和自然挖矿所需的现金/时间成本。</p>
+<form id="ore-form">
+  <div class="form-grid">
+    <label>目标矿石（Ore）<select name="oreId" class="ore-select"></select></label>
+    <label>还缺多少<input name="missingQty" type="number" step="0.01" min="0" required placeholder="例如 10"></label>
+    <label>当前 Ask（DRILL / 个）<input name="askPerOre" type="number" step="0.01" min="0" required placeholder="例如 12.5"></label>
+    <label>用于补料的钻机（Rig）<select name="tier" class="rig-select"></select><span class="field-help">选择目标矿石（Ore） 后，会自动跳到能产出的最低 Tier。</span></label>
+    <label>参与方式<select name="ownershipMode" class="ownership-mode"><option value="own">我在自己的地块（Plot）上挖</option><option value="guest">我在别人的开放地块（Open Plot）上挖</option></select></label>
+    <label class="own-plot-field">自己的地块等级（Plot Level）<select name="plotLevel" class="level-select"></select></label>
+  </div>
+  <details class="advanced"><summary>高级参数（可选）</summary><div class="form-grid">
+    <label>每轮其他产出的净价值（DRILL）<input name="otherOutputNet" type="number" step="0.01" min="0" value="0"></label>
+    <label>每轮 Gas 折算 DRILL<input name="gasDrill" type="number" step="0.01" min="0" value="0"></label>
+    <label>其他已确认 Bonus（DRILL）<input name="extraBonusDrill" type="number" step="0.01" min="0" value="0"></label>
+  </div></details>
+  <button class="btn primary" type="submit">比较买 vs 挖</button>
+</form>
+<div id="ore-result" class="result muted">填“缺多少”和当前 Ask 后比较。</div><div class="actions"><button id="ore-copy" data-track="copy_ore" class="btn" disabled>复制结果摘要</button></div></section>
+
+<section id="upgrade" class="tool wide"><span class="tag">04 · Upgrade</span><h2>下一等级还缺多少？</h2><p>官方升级表自动带出需求。你只填自己的库存；有市场 Ask 再填，没有就留空。</p>
+<div class="form-grid three"><label>当前等级<select id="upgrade-level" class="level-select"></select></label><label>用于自然补料的 Rig<select id="upgrade-rig" class="rig-select"></select><span class="field-help">默认选能覆盖本级所需 Ore 的最低 Tier；这不代表经济最优。</span></label><div><span class="muted">下一等级</span><div id="next-level" class="metric">—</div></div></div>
+<div id="wallet-prefill-status" class="wallet-prefill-status"><a href="./wallet.html">不想手填矿石库存？用只读钱包助手 →</a></div><div id="requirements" class="requirements"></div><button id="upgrade-calc" class="btn primary">计算升级路径</button>
+<div id="upgrade-result" class="result muted">填写持有量即可看材料缺口；Ask 不填就不假装有买入价格。</div><div class="actions"><button id="upgrade-copy" data-track="copy_upgrade" class="btn" disabled>复制结果摘要</button></div></section>
+
+<section id="epoch" class="tool wide"><span class="tag">05 · Epoch</span><h2>我现在在哪个奖励档？</h2><p>只输入自己的累计 paid-rig spend，不需要钱包地址。工具用匿名公共榜单快照显示静态名次区间和下一轮情景。</p>
+<div class="split"><form id="epoch-form" class="form-grid"><label>当前累计付费钻机支出（Paid-Rig Spend，DRILL）<input name="spentDrill" type="number" step="0.01" min="0" required placeholder="在 Epoch / Leaderboard 页面看到的累计数"></label><label>下一轮钻机（Rig）<select name="plannedTier" id="epoch-rig"><option value="0">不加 Rig</option></select></label><label>额外情景 Spend（可选）<input name="extraSpend" type="number" step="0.01" min="0" value="0"></label><button class="btn primary" type="submit">看当前 / 下一轮</button></form><div><div id="epoch-meta" class="sourcebar"></div><div id="epoch-result" class="result muted">输入你自己的累计 paid-rig spend。</div><div class="actions"><button id="epoch-copy" data-track="copy_epoch" class="btn" disabled>复制分享摘要</button></div></div></div>
+<div class="table-wrap" style="margin-top:18px"><table><thead><tr><th>奖励档</th><th>名次</th><th>Credits</th><th>当前快照入档线</th></tr></thead><tbody id="epoch-bands"></tbody></table></div><p class="assumption">这是静态快照，不是排名预测。其他玩家会继续增加 spend；同分按 <code>first-reached-score</code> 决定先后，因此工具显示区间而不是伪精确名次。</p></section>
+</div>
+
+<section class="section"><div class="callout"><strong>计算器不是收益承诺。</strong> 官方概率和 Plot 参数来自当前公开配置；市场 Ask、Gas、估值等由你输入。游戏更新后参数可能变化。</div></section>
+<footer class="footer">All calculations are local in your browser. No wallet signature.</footer></main><script type="module" src="./tools.mjs"></script><script type="module" src="./analytics.mjs"></script></body></html>

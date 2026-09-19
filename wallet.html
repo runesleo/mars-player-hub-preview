@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>钱包助手 — Mars Player Hub</title><link rel="stylesheet" href="./styles.css"></head><body>
+<header class="nav"><a class="brand" href="./index.html">Mars Player Hub</a><nav aria-label="主导航"><a href="./start.html">新手入门</a><a href="./tools.html">工具</a><a class="active" href="./wallet.html">钱包助手</a><a href="./faq.html">问答</a><a href="./updates.html">更新</a></nav></header>
+<main class="shell">
+<section class="hero"><p class="eyebrow">Read-only wallet helper</p><h1>贴地址，少手填一点。</h1><p class="lede">只读 Robinhood Chain 公开链上数据：网络 Gas、DRILL、矿石（Ore）库存和持有地块（Plot）数量。不连接钱包，不签名，不授权，不发交易。</p></section>
+
+<section class="section"><div class="panel">
+  <h2 class="section-title">读取钱包公开数据</h2>
+  <form id="wallet-form" class="wallet-form">
+    <label>Robinhood Chain 钱包地址<input id="wallet-address" name="address" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x…" required></label>
+    <button id="wallet-read" class="btn primary" type="submit">只读查询</button>
+  </form>
+  <div class="callout wallet-privacy"><strong>隐私说明：</strong>地址不会发送给 Leo / Mars Player Hub 后端，也不会进入 analytics。为了读取公开链上余额，浏览器会把查询直接发送到公共 Robinhood Chain RPC；RPC 服务因此会看到被查询的地址。</div>
+  <div id="wallet-status" class="sourcebar"><span class="badge">未查询</span><span>无需连接钱包</span></div>
+</div></section>
+
+<section id="wallet-result-section" class="section" hidden>
+  <p class="eyebrow">Wallet snapshot</p><h2 class="section-title">你的公开链上快照</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">网络 Gas</span><div id="wallet-native" class="metric">—</div><p>Robinhood Chain 原生 Gas 余额。</p></article>
+    <article class="card"><span class="tag">DRILL</span><div id="wallet-drill" class="metric">—</div><p>钱包当前 DRILL 余额。</p></article>
+    <article class="card"><span class="tag">地块（Plot）</span><div id="wallet-plots" class="metric">—</div><p>只读 ERC-721 持有数量；暂不自动枚举 Plot ID / 等级。</p></article>
+  </div>
+
+  <div class="panel wallet-ore-panel">
+    <h2>矿石（Ore）库存</h2>
+    <p class="muted">只显示链上 ERC-1155 余额。没有可靠中文专名的矿石继续保留 Ore 编号；Core Blue 保留官方英文。</p>
+    <div class="table-wrap"><table><thead><tr><th>材料</th><th>余额</th></tr></thead><tbody id="wallet-ore-body"></tbody></table></div>
+    <div class="actions">
+      <button id="wallet-prefill" class="btn primary" type="button">带入升级工具（本次会话）</button>
+      <button id="wallet-copy" class="btn" type="button">复制库存摘要</button>
+      <a class="btn ghost" href="./tools.html#upgrade">打开升级工具</a>
+    </div>
+    <p class="helper">“带入升级工具”只写入当前浏览器标签页的 sessionStorage。关闭标签页后自然失效；不会写入 analytics，也不会发送到 Hub 后端。</p>
+  </div>
+</section>
+
+<section class="section"><div class="callout"><strong>当前自动读取范围：</strong>Gas / DRILL / Ore / Plot 数量。Plot ID、Plot Level、当前 Rig、Epoch 自己的名次仍不自动读取；Project Mars 一手 API 不允许独立站跨域直连，我们不绕过它。</div></section>
+<footer class="footer">Read-only RPC · No wallet connection · No signature · No transaction</footer>
+</main><script type="module" src="./wallet.mjs"></script><script type="module" src="./analytics.mjs"></script></body></html>

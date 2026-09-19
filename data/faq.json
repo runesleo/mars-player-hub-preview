@@ -1,0 +1,176 @@
+[
+  {
+    "q": "Project Mars 到底是什么？",
+    "category": "getting-started",
+    "status": "reviewed-seed",
+    "answer": "它是围绕 Plot、Rig、DRILL、Ore、升级和赛季奖励展开的链上经营游戏。最好的入门方式不是先背收益率，而是先看懂一轮完整的 plant → wait → collect → 再决策。"
+  },
+  {
+    "q": "没有 Plot 能玩吗？",
+    "category": "getting-started",
+    "status": "reviewed-seed",
+    "answer": "可以。官方手册明确支持在其他玩家的 open plot 上当 Driller。买 Plot 是另一条更重的资本路径，不是进入游戏的前置条件。"
+  },
+  {
+    "q": "新人第一天应该先做什么？",
+    "category": "getting-started",
+    "status": "reviewed-seed",
+    "answer": "先确认官网、链和 gas，再用低档 Rig 跑一轮，完整经历 plant、等待、collect、看 DRILL/Ore 结果。先学会记账，再考虑放大。"
+  },
+  {
+    "q": "需要准备什么资产？",
+    "category": "getting-started",
+    "status": "reviewed-seed",
+    "answer": "至少需要 Robinhood Chain 上的网络 gas，以及参与 paid rig 所需的 DRILL。是否需要 Plot 取决于你选择 Driller 还是 Plot Owner 路径。"
+  },
+  {
+    "q": "五档 Rig 有什么区别？",
+    "category": "mining",
+    "status": "reviewed-seed",
+    "answer": "主要差在 DRILL 成本、持续时间和 Ore 概率分布。当前公开配置可在 Rig 计算器里直接选择 T1–T5；高档不代表对每个目标都更优。"
+  },
+  {
+    "q": "T4 和 T5 怎么选？",
+    "category": "mining",
+    "status": "reviewed-seed",
+    "answer": "看你追求的 Ore、资金占用、周期和工作资金。T5 能触达 Ore 10/11，但一次占用 2500 DRILL、周期 8 小时；T4 更偏常规吞吐。"
+  },
+  {
+    "q": "Rig 的收益怎么算？",
+    "category": "money",
+    "status": "reviewed-seed",
+    "answer": "把期望 base DRILL、自己的 owner bonus、Ore 可执行价值、gas 和可选 OIL 估值分开。Hub 的 Rig 计算器默认不把没有可靠退出路径的价值硬算成现金利润。"
+  },
+  {
+    "q": "怎么判断自己回本了没有？",
+    "category": "money",
+    "status": "reviewed-seed",
+    "answer": "已回收现金 + 当前流动资产 + 非流动资产保守估值，再减累计投入。不要把未来空投、未兑现积分或无法卖出的材料算成已回本。"
+  },
+  {
+    "q": "为什么每个人说的收益率差很多？",
+    "category": "money",
+    "status": "reviewed-seed",
+    "answer": "因为有人只看单轮 DRILL，有人把 Ore、Plot、OIL、积分和未实现资产都算进去。先统一口径，再谈收益率。"
+  },
+  {
+    "q": "OIL 算收益吗？",
+    "category": "money",
+    "status": "reviewed-seed",
+    "answer": "OIL 是游戏材料/奖励，不应该在没有明确可兑现路径时按现金价值计算。工具默认把它单独展示；你可以自行给估值，但会明确标为假设。"
+  },
+  {
+    "q": "Space Credits 就是 $SPCX 吗？",
+    "category": "epoch",
+    "status": "reviewed-seed",
+    "answer": "不能默认等同。当前 Epoch 2 API 的 reward 字段是 space-credits，但没有足够依据把它直接按 1:1 $SPCX 计价。"
+  },
+  {
+    "q": "Epoch 排名有什么用？",
+    "category": "epoch",
+    "status": "reviewed-seed",
+    "answer": "不同名次对应不同奖励档位。重点是看边际奖励变化，而不是把所有 DRILL 都拿去冲榜。生产性 Rig 支出和纯排名支出要分开。"
+  },
+  {
+    "q": "Tie-break 怎么算？",
+    "category": "epoch",
+    "status": "reviewed-seed",
+    "answer": "当前 Epoch API 标记为 first-reached-score：同分时更早达到该分数的人有排序优势。"
+  },
+  {
+    "q": "Ore 应该卖、留着还是升级？",
+    "category": "upgrades",
+    "status": "reviewed-seed",
+    "answer": "先看下一等级缺口和你的目标。升级需要的 Ore 是成长资产；多余 Ore 才更适合拿去比较出售、其他用途或继续持有。"
+  },
+  {
+    "q": "买 Ore 还是自己挖？",
+    "category": "upgrades",
+    "status": "reviewed-seed",
+    "answer": "比较买齐缺口的 DRILL 成本、选定 Rig 对目标 Ore 的期望产量、需要的周期和每轮净现金成本。Ore 计算器会把时间和现金两条账分开。"
+  },
+  {
+    "q": "升级 Plot 有什么用？",
+    "category": "upgrades",
+    "status": "reviewed-seed",
+    "answer": "当前公开配置里升级会提高 contribution weight 和 owner cut。具体升级成本由下一等级的 Ore requirements 决定。"
+  },
+  {
+    "q": "升级会影响已经开着的 Rig 吗？",
+    "category": "upgrades",
+    "status": "reviewed-seed",
+    "answer": "不要假设会。已 plant 的 Rig 可能锁定当时的 terms；升级后更适合把新参数视为下一轮才生效，除非官方当前界面明确说明。"
+  },
+  {
+    "q": "Ore Market 手续费多少？",
+    "category": "market",
+    "status": "reviewed-seed",
+    "answer": "官方手册基线写的是卖方支付 5%，卖方收到挂牌价的 95%。买方支付挂牌总价。游戏可能更新，工具会显示数据来源与更新时间。"
+  },
+  {
+    "q": "Slush 是什么？",
+    "category": "materials",
+    "status": "reviewed-seed",
+    "answer": "Slush 是独立材料，不是普通 Ore。官方手册描述其与 Refinery 路径相关，不能直接当作升级 Ore 使用。"
+  },
+  {
+    "q": "DRILL Bank 是不是应该把本金全存进去？",
+    "category": "money",
+    "status": "reviewed-seed",
+    "answer": "不应该默认这样做。Bank 是额外经济层，和保持 Rig 工作资金是不同目标。先保证自己的操作资金，再单独评估 Bank。"
+  },
+  {
+    "q": "Plot Owner 和 Driller 有什么区别？",
+    "category": "getting-started",
+    "status": "reviewed-seed",
+    "answer": "Driller 花 DRILL 开 Rig 并拿自己的产出；Plot Owner 持有土地，能升级并参与 owner/plot 相关收益。一个人可以同时扮演两种角色。"
+  },
+  {
+    "q": "一个 Plot 能同时开很多 Rig 吗？",
+    "category": "mining",
+    "status": "reviewed-seed",
+    "answer": "官方手册基线写的是每个 Plot 同时 1 个 Rig；账号整体可同时管理更多 Rig。完成但未 collect/release 的 Rig 仍会占位置。"
+  },
+  {
+    "q": "Free Rig 是什么？",
+    "category": "mining",
+    "status": "reviewed-seed",
+    "answer": "官方手册基线写的是每块自有 Plot 可领取 2 个免费 T3 Driller，一次性使用规则以当前界面为准。Free Rig 与 paid rig 的经济口径不同。"
+  },
+  {
+    "q": "Referral 会影响我的成本吗？",
+    "category": "trust",
+    "status": "reviewed-seed",
+    "answer": "Hub 不会把推荐链接作为查看教程和工具的条件。具体 referral 奖励规则和费率以官方当前 Referrals 页面为准，并会明确披露推荐关系。"
+  },
+  {
+    "q": "一定要用 Leo 的推荐链接吗？",
+    "category": "trust",
+    "status": "reviewed-seed",
+    "answer": "不需要。所有免费教程和计算器都应该独立可用。若你本来就准备参与，使用推荐链接只是支持工具和社区的一种可选方式。"
+  },
+  {
+    "q": "为什么这里不展示 Leo 的实时仓位？",
+    "category": "trust",
+    "status": "reviewed-seed",
+    "answer": "这个 Hub 的目标是帮助每个玩家自己计算，而不是制造隐性跟单。Leo 的实时仓位、成本和 P&L 默认不公开。"
+  },
+  {
+    "q": "钱包地址会被保存吗？",
+    "category": "trust",
+    "status": "reviewed-seed",
+    "answer": "MVP 不连接钱包。未来如果做只读地址查询，也应默认只在用户会话中计算，不签名、不授权、不自动公开，分享必须显式选择。"
+  },
+  {
+    "q": "官方更新后我先看什么？",
+    "category": "updates",
+    "status": "reviewed-seed",
+    "answer": "先看机制有没有改变，再看改变影响哪条账：现金、材料、升级、排名还是退出流动性。Updates 页面统一用 What changed → So what → What to check。"
+  },
+  {
+    "q": "New Horizons / Spaceship 现在值得投入吗？",
+    "category": "updates",
+    "status": "reviewed-seed",
+    "answer": "官方确实在预热，但在成本、收益和兑换规则没有第一方落地前，更适合作为观察项而不是直接按未来收益定价。"
+  }
+]

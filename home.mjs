@@ -1,0 +1,1 @@
+import{loadJSON,dateText}from"./common.mjs";const box=document.querySelector("#freshness");try{const m=await loadJSON("./data/mechanics.json");box.innerHTML='<span class="badge good">公开配置快照</span><span>官方 /api/history · '+dateText(m.checkedAt)+'</span><span>不含任何 Leo 仓位数据</span>'}catch(e){box.textContent="配置快照暂不可用"}

@@ -1,0 +1,793 @@
+{
+  "schema": "mars-player-hub.public-epoch.v1",
+  "source": "https://project-mars.app/api/leaderboard/epochs",
+  "generatedAt": 1789829672757,
+  "epoch": {
+    "number": 2,
+    "startsAt": 1789689600000,
+    "endsAt": 1790121600000,
+    "pool": "10000",
+    "reward": "space-credits",
+    "tieBreak": "first-reached-score",
+    "status": "open",
+    "topN": 100,
+    "participants": 163
+  },
+  "bands": [
+    {
+      "startRank": 1,
+      "endRank": 1,
+      "shareBps": 2500,
+      "credits": "2500",
+      "entrySpentDrill": 527500.0,
+      "topSpentDrill": 527500.0
+    },
+    {
+      "startRank": 2,
+      "endRank": 2,
+      "shareBps": 1500,
+      "credits": "1500",
+      "entrySpentDrill": 255000.0,
+      "topSpentDrill": 255000.0
+    },
+    {
+      "startRank": 3,
+      "endRank": 3,
+      "shareBps": 1000,
+      "credits": "1000",
+      "entrySpentDrill": 237500.0,
+      "topSpentDrill": 237500.0
+    },
+    {
+      "startRank": 4,
+      "endRank": 10,
+      "shareBps": 250,
+      "credits": "250",
+      "entrySpentDrill": 90075.0,
+      "topSpentDrill": 184700.0
+    },
+    {
+      "startRank": 11,
+      "endRank": 20,
+      "shareBps": 125,
+      "credits": "125",
+      "entrySpentDrill": 32750.0,
+      "topSpentDrill": 81100.0
+    },
+    {
+      "startRank": 21,
+      "endRank": 30,
+      "shareBps": 75,
+      "credits": "75",
+      "entrySpentDrill": 16200.0,
+      "topSpentDrill": 29800.0
+    },
+    {
+      "startRank": 31,
+      "endRank": 40,
+      "shareBps": 50,
+      "credits": "50",
+      "entrySpentDrill": 8600.0,
+      "topSpentDrill": 14700.0
+    },
+    {
+      "startRank": 41,
+      "endRank": 50,
+      "shareBps": 25,
+      "credits": "25",
+      "entrySpentDrill": 7350.0,
+      "topSpentDrill": 8450.0
+    },
+    {
+      "startRank": 51,
+      "endRank": 100,
+      "shareBps": 10,
+      "credits": "10",
+      "entrySpentDrill": 2000.0,
+      "topSpentDrill": 7250.0
+    }
+  ],
+  "rows": [
+    {
+      "rank": 1,
+      "spentDrill": 527500.0,
+      "shareBps": 2500,
+      "credits": "2500",
+      "rigs": 211
+    },
+    {
+      "rank": 2,
+      "spentDrill": 255000.0,
+      "shareBps": 1500,
+      "credits": "1500",
+      "rigs": 102
+    },
+    {
+      "rank": 3,
+      "spentDrill": 237500.0,
+      "shareBps": 1000,
+      "credits": "1000",
+      "rigs": 95
+    },
+    {
+      "rank": 4,
+      "spentDrill": 184700.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 109
+    },
+    {
+      "rank": 5,
+      "spentDrill": 177075.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 540
+    },
+    {
+      "rank": 6,
+      "spentDrill": 170000.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 68
+    },
+    {
+      "rank": 7,
+      "spentDrill": 136850.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 90
+    },
+    {
+      "rank": 8,
+      "spentDrill": 110150.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 325
+    },
+    {
+      "rank": 9,
+      "spentDrill": 106500.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 81
+    },
+    {
+      "rank": 10,
+      "spentDrill": 90075.0,
+      "shareBps": 250,
+      "credits": "250",
+      "rigs": 69
+    },
+    {
+      "rank": 11,
+      "spentDrill": 81100.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 227
+    },
+    {
+      "rank": 12,
+      "spentDrill": 81000.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 90
+    },
+    {
+      "rank": 13,
+      "spentDrill": 69200.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 138
+    },
+    {
+      "rank": 14,
+      "spentDrill": 66750.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 31
+    },
+    {
+      "rank": 15,
+      "spentDrill": 62550.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 47
+    },
+    {
+      "rank": 16,
+      "spentDrill": 55400.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 146
+    },
+    {
+      "rank": 17,
+      "spentDrill": 52500.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 21
+    },
+    {
+      "rank": 18,
+      "spentDrill": 44850.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 330
+    },
+    {
+      "rank": 19,
+      "spentDrill": 44125.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 144
+    },
+    {
+      "rank": 20,
+      "spentDrill": 32750.0,
+      "shareBps": 125,
+      "credits": "125",
+      "rigs": 31
+    },
+    {
+      "rank": 21,
+      "spentDrill": 29800.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 22
+    },
+    {
+      "rank": 22,
+      "spentDrill": 29000.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 75
+    },
+    {
+      "rank": 23,
+      "spentDrill": 27250.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 41
+    },
+    {
+      "rank": 24,
+      "spentDrill": 26225.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 55
+    },
+    {
+      "rank": 25,
+      "spentDrill": 24250.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 20
+    },
+    {
+      "rank": 26,
+      "spentDrill": 22400.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 448
+    },
+    {
+      "rank": 27,
+      "spentDrill": 22275.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 62
+    },
+    {
+      "rank": 28,
+      "spentDrill": 20000.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 8
+    },
+    {
+      "rank": 29,
+      "spentDrill": 19750.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 38
+    },
+    {
+      "rank": 30,
+      "spentDrill": 16200.0,
+      "shareBps": 75,
+      "credits": "75",
+      "rigs": 18
+    },
+    {
+      "rank": 31,
+      "spentDrill": 14700.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 42
+    },
+    {
+      "rank": 32,
+      "spentDrill": 14600.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 37
+    },
+    {
+      "rank": 33,
+      "spentDrill": 14500.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 18
+    },
+    {
+      "rank": 34,
+      "spentDrill": 13500.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 108
+    },
+    {
+      "rank": 35,
+      "spentDrill": 11450.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 24
+    },
+    {
+      "rank": 36,
+      "spentDrill": 10800.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 12
+    },
+    {
+      "rank": 37,
+      "spentDrill": 10500.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 30
+    },
+    {
+      "rank": 38,
+      "spentDrill": 10350.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 8
+    },
+    {
+      "rank": 39,
+      "spentDrill": 10000.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 4
+    },
+    {
+      "rank": 40,
+      "spentDrill": 8600.0,
+      "shareBps": 50,
+      "credits": "50",
+      "rigs": 6
+    },
+    {
+      "rank": 41,
+      "spentDrill": 8450.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 37
+    },
+    {
+      "rank": 42,
+      "spentDrill": 8400.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 24
+    },
+    {
+      "rank": 43,
+      "spentDrill": 8100.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 9
+    },
+    {
+      "rank": 44,
+      "spentDrill": 8100.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 9
+    },
+    {
+      "rank": 45,
+      "spentDrill": 8100.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 111
+    },
+    {
+      "rank": 46,
+      "spentDrill": 8075.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 61
+    },
+    {
+      "rank": 47,
+      "spentDrill": 8000.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 64
+    },
+    {
+      "rank": 48,
+      "spentDrill": 7925.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 64
+    },
+    {
+      "rank": 49,
+      "spentDrill": 7500.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 3
+    },
+    {
+      "rank": 50,
+      "spentDrill": 7350.0,
+      "shareBps": 25,
+      "credits": "25",
+      "rigs": 10
+    },
+    {
+      "rank": 51,
+      "spentDrill": 7250.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 58
+    },
+    {
+      "rank": 52,
+      "spentDrill": 7200.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 8
+    },
+    {
+      "rank": 53,
+      "spentDrill": 7200.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 8
+    },
+    {
+      "rank": 54,
+      "spentDrill": 7125.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 57
+    },
+    {
+      "rank": 55,
+      "spentDrill": 7050.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 17
+    },
+    {
+      "rank": 56,
+      "spentDrill": 6875.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 21
+    },
+    {
+      "rank": 57,
+      "spentDrill": 6875.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 37
+    },
+    {
+      "rank": 58,
+      "spentDrill": 6850.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 137
+    },
+    {
+      "rank": 59,
+      "spentDrill": 6750.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 28
+    },
+    {
+      "rank": 60,
+      "spentDrill": 6650.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 19
+    },
+    {
+      "rank": 61,
+      "spentDrill": 6250.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 38
+    },
+    {
+      "rank": 62,
+      "spentDrill": 6075.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 18
+    },
+    {
+      "rank": 63,
+      "spentDrill": 5250.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 15
+    },
+    {
+      "rank": 64,
+      "spentDrill": 5150.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 34
+    },
+    {
+      "rank": 65,
+      "spentDrill": 5000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 2
+    },
+    {
+      "rank": 66,
+      "spentDrill": 5000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 2
+    },
+    {
+      "rank": 67,
+      "spentDrill": 5000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 17
+    },
+    {
+      "rank": 68,
+      "spentDrill": 5000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 2
+    },
+    {
+      "rank": 69,
+      "spentDrill": 5000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 8
+    },
+    {
+      "rank": 70,
+      "spentDrill": 4925.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 25
+    },
+    {
+      "rank": 71,
+      "spentDrill": 4700.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 16
+    },
+    {
+      "rank": 72,
+      "spentDrill": 4625.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 27
+    },
+    {
+      "rank": 73,
+      "spentDrill": 4500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 17
+    },
+    {
+      "rank": 74,
+      "spentDrill": 4500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 5
+    },
+    {
+      "rank": 75,
+      "spentDrill": 4500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 5
+    },
+    {
+      "rank": 76,
+      "spentDrill": 4300.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 3
+    },
+    {
+      "rank": 77,
+      "spentDrill": 4300.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 3
+    },
+    {
+      "rank": 78,
+      "spentDrill": 4275.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 10
+    },
+    {
+      "rank": 79,
+      "spentDrill": 4250.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 9
+    },
+    {
+      "rank": 80,
+      "spentDrill": 4100.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 28
+    },
+    {
+      "rank": 81,
+      "spentDrill": 3850.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 77
+    },
+    {
+      "rank": 82,
+      "spentDrill": 3600.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 4
+    },
+    {
+      "rank": 83,
+      "spentDrill": 3600.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 4
+    },
+    {
+      "rank": 84,
+      "spentDrill": 3500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 19
+    },
+    {
+      "rank": 85,
+      "spentDrill": 3200.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 3
+    },
+    {
+      "rank": 86,
+      "spentDrill": 3200.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 6
+    },
+    {
+      "rank": 87,
+      "spentDrill": 3125.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 6
+    },
+    {
+      "rank": 88,
+      "spentDrill": 3125.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 25
+    },
+    {
+      "rank": 89,
+      "spentDrill": 2925.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 18
+    },
+    {
+      "rank": 90,
+      "spentDrill": 2875.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 23
+    },
+    {
+      "rank": 91,
+      "spentDrill": 2800.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 15
+    },
+    {
+      "rank": 92,
+      "spentDrill": 2750.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 28
+    },
+    {
+      "rank": 93,
+      "spentDrill": 2700.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 3
+    },
+    {
+      "rank": 94,
+      "spentDrill": 2500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 1
+    },
+    {
+      "rank": 95,
+      "spentDrill": 2500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 1
+    },
+    {
+      "rank": 96,
+      "spentDrill": 2500.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 20
+    },
+    {
+      "rank": 97,
+      "spentDrill": 2450.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 15
+    },
+    {
+      "rank": 98,
+      "spentDrill": 2350.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 47
+    },
+    {
+      "rank": 99,
+      "spentDrill": 2250.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 18
+    },
+    {
+      "rank": 100,
+      "spentDrill": 2000.0,
+      "shareBps": 10,
+      "credits": "10",
+      "rigs": 7
+    }
+  ],
+  "notice": "Anonymous public leaderboard snapshot. Player addresses and usernames are intentionally omitted."
+}

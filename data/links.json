@@ -1,0 +1,10 @@
+{
+  "schema": "mars-player-hub.links.v1",
+  "official": "https://project-mars.app",
+  "referral": "https://project-mars.app/?ref=leolabs",
+  "telegramGroup": "https://t.me/runesgang",
+  "telegramChannel": "https://t.me/runesgangalpha",
+  "community": "https://leolabs.me/go/community",
+  "x": "https://x.com/runes_leo",
+  "referralDisclosure": "推荐入口包含 Leo 的 referral 关系。是否使用完全可选，不影响免费教程、FAQ 和计算器；使用推荐入口可以支持工具与社区持续维护。"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "mars-player-hub.wallet-read-config.v1",
+  "chainId": 4663,
+  "chainName": "Robinhood Chain",
+  "rpc": "https://rpc.solidrpc.io/public/evm/4663",
+  "contracts": {
+    "drill": "0xD9d674b04A72AFfe00E06385535Eaac10B988fCa",
+    "stones": "0x063bdBA5c8C29A57c6530F2668CFd040b1282118",
+    "plot": "0x8878EA7fc881BFA0a6ECd7266125a664323e4278"
+  },
+  "decimals": {
+    "native": 18,
+    "drill": 18,
+    "ore": 0,
+    "plot": 0
+  },
+  "oreCount": 12,
+  "privacy": "Address queries go directly from the visitor browser to the public Robinhood Chain RPC. Mars Player Hub has no wallet backend and analytics does not receive the address or balances."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "runtime-config-20260919",
+    "date": "2026-09-19T14:54:11.426000+00:00",
+    "kind": "mechanics",
+    "title": "Live Rig / runtime config refreshed",
+    "source": "Project Mars first-party /api/history",
+    "sourceUrl": "https://project-mars.app",
+    "whatChanged": "Current DrillSite V2 config is live with configVersion 9. OIL rebate is enabled at 5.0% of paid-rig bet across current paid tiers.",
+    "soWhat": "Rig cost/duration and OIL can be modeled from current first-party config, but bonuses and economy parameters may change again.",
+    "whatToCheck": "Use the calculators with the current snapshot timestamp. If the in-app screen differs, trust the current app and refresh the data.",
+    "status": "verified-first-party"
+  },
+  {
+    "id": "epoch-2-space-credits",
+    "date": "2026-09-18T00:00:00+00:00",
+    "kind": "epoch",
+    "title": "Epoch 2 rewards space-credits",
+    "source": "Project Mars public leaderboard API",
+    "sourceUrl": "https://project-mars.app",
+    "whatChanged": "Epoch 2 is open with a 10000 space-credits pool and top-100 reward shares.",
+    "soWhat": "Leaderboard rank has a discrete reward-band effect. Do not assume current points/rewards equal a future token unless official redemption rules say so.",
+    "whatToCheck": "Compare productive rig spend with the next reward band. Do not spend solely to move rank unless the underlying rig action also makes sense.",
+    "status": "verified-first-party"
+  },
+  {
+    "id": "new-horizons-teaser",
+    "date": "2026-09-18T22:56:27+00:00",
+    "kind": "teaser",
+    "title": "New Horizons / Hyperspace / ride teasers",
+    "source": "Official X @projectmars_rh",
+    "sourceUrl": "https://x.com/projectmars_rh",
+    "whatChanged": "Official posts are teasing New Horizons, hyperspace and choosing a ride, alongside earlier $SPCX messaging.",
+    "soWhat": "This is real product optionality, but the earning/cost mechanics are not sufficiently specified yet.",
+    "whatToCheck": "Watch for first-party mechanics, costs, earning rules and redemption rules before assigning financial value.",
+    "status": "official-teaser-not-live-economics"
+  }
+]

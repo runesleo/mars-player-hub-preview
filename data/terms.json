@@ -1,0 +1,146 @@
+[
+  {
+    "zh": "地块",
+    "en": "Plot",
+    "community": "地块",
+    "note": "Project Mars 的土地/NFT 单元。"
+  },
+  {
+    "zh": "地块主",
+    "en": "Plot Owner",
+    "community": "地主",
+    "note": "拥有 Plot 的玩家；群聊可简称“地主”。"
+  },
+  {
+    "zh": "钻工",
+    "en": "Driller",
+    "community": "钻工",
+    "note": "部署 Rig 进行挖掘的玩家角色，不要求自己持有 Plot。"
+  },
+  {
+    "zh": "钻机",
+    "en": "Rig",
+    "community": "钻机",
+    "note": "T1–T5 的付费/免费作业设备。"
+  },
+  {
+    "zh": "付费钻机",
+    "en": "Paid Rig",
+    "community": "付费钻机",
+    "note": "消耗 DRILL 部署的 Rig。"
+  },
+  {
+    "zh": "免费钻机",
+    "en": "Free Rig",
+    "community": "免费钻机",
+    "note": "符合机制条件时可使用的免费 Rig。"
+  },
+  {
+    "zh": "DRILL",
+    "en": "DRILL",
+    "community": "DRILL",
+    "note": "游戏内核心代币/工作资金；不强行翻译。"
+  },
+  {
+    "zh": "矿石",
+    "en": "Ore",
+    "community": "矿",
+    "note": "升级等用途的材料。"
+  },
+  {
+    "zh": "OIL",
+    "en": "OIL",
+    "community": "OIL",
+    "note": "材料/奖励名，保留官方英文。"
+  },
+  {
+    "zh": "矿浆",
+    "en": "Slush",
+    "community": "Slush / 矿浆",
+    "note": "社区中文辅助称呼；官方 UI 仍以 Slush 为准。"
+  },
+  {
+    "zh": "赛季",
+    "en": "Epoch",
+    "community": "赛季",
+    "note": "排行榜奖励周期；比直译“纪元”更适合中文玩家交流。"
+  },
+  {
+    "zh": "太空积分",
+    "en": "Space Credits",
+    "community": "太空积分",
+    "note": "当前赛季奖励名称；不得默认等同于 $SPCX。"
+  },
+  {
+    "zh": "地块主奖励",
+    "en": "Owner Bonus",
+    "community": "地主奖励",
+    "note": "与 Plot 所有权/等级相关的奖励口径。"
+  },
+  {
+    "zh": "地块主分成",
+    "en": "Owner Cut",
+    "community": "地主分成",
+    "note": "Plot 等级对应的分成比例。"
+  },
+  {
+    "zh": "开放地块",
+    "en": "Open Plot",
+    "community": "开放地块",
+    "note": "允许其他 Driller 使用的 Plot。"
+  },
+  {
+    "zh": "部署钻机",
+    "en": "Plant",
+    "community": "部署 / 下钻",
+    "note": "把 Rig 放到 Plot 上开始一轮作业。"
+  },
+  {
+    "zh": "收矿",
+    "en": "Collect",
+    "community": "收矿",
+    "note": "Rig 到点后领取本轮产出。"
+  },
+  {
+    "zh": "再部署",
+    "en": "Replant",
+    "community": "续挖 / 再部署",
+    "note": "Collect 后继续启动下一轮。"
+  },
+  {
+    "zh": "权重",
+    "en": "Weight",
+    "community": "权重",
+    "note": "Plot progression / contribution 相关参数。"
+  },
+  {
+    "zh": "精炼厂",
+    "en": "Refinery",
+    "community": "精炼厂",
+    "note": "Project Mars 的材料处理建筑/机制。"
+  },
+  {
+    "zh": "DRILL 银行",
+    "en": "DRILL Bank",
+    "community": "银行",
+    "note": "独立经济模块；不要与 Rig 工作资金混为一谈。"
+  },
+  {
+    "zh": "New Horizons",
+    "en": "New Horizons",
+    "community": "New Horizons",
+    "note": "产品专有名词，保留英文。"
+  },
+  {
+    "zh": "飞船",
+    "en": "Spaceship",
+    "community": "飞船",
+    "note": "New Horizons 相关专有对象；首次出现保留英文对照。"
+  },
+  {
+    "zh": "Core Blue",
+    "en": "Core Blue",
+    "community": "Core Blue",
+    "note": "高级矿石专名，保留官方英文。"
+  }
+]

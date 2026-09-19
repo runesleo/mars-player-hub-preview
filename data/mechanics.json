@@ -1,0 +1,561 @@
+{
+  "schema": "mars-player-hub.public-mechanics.v1",
+  "source": "https://project-mars.app/api/history",
+  "checkedAt": 1789829651426,
+  "generatedAt": 1789829672731,
+  "notice": "Public first-party game configuration only. No Leo wallet, balances, positions or P&L are included.",
+  "rigs": [
+    {
+      "tier": 1,
+      "name": "Scout",
+      "betDrill": 50.0,
+      "durationSeconds": 1800,
+      "tray": 79,
+      "enabled": true,
+      "expectedBaseDrill": 47.76279644,
+      "expectedOrePerCycle": [
+        44.3111,
+        19.671,
+        8.7374,
+        3.8789,
+        2.2989,
+        0.1027,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "tier": 2,
+      "name": "Hauler",
+      "betDrill": 125.0,
+      "durationSeconds": 3600,
+      "tray": 87,
+      "enabled": true,
+      "expectedBaseDrill": 119.4203847,
+      "expectedOrePerCycle": [
+        34.8696,
+        21.1149,
+        12.7803,
+        7.743,
+        6.2466,
+        3.7845,
+        0.4611,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "tier": 3,
+      "name": "Driller",
+      "betDrill": 350.0,
+      "durationSeconds": 7200,
+      "tray": 59,
+      "enabled": true,
+      "expectedBaseDrill": 334.48761174,
+      "expectedOrePerCycle": [
+        15.6645,
+        11.6643,
+        8.6907,
+        6.4723,
+        6.4251,
+        4.7849,
+        2.8556,
+        2.124,
+        0.3186,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "tier": 4,
+      "name": "Excavator",
+      "betDrill": 900.0,
+      "durationSeconds": 14400,
+      "tray": 77,
+      "enabled": true,
+      "expectedBaseDrill": 859.16754,
+      "expectedOrePerCycle": [
+        0.0,
+        25.2791,
+        16.6551,
+        10.9725,
+        9.6404,
+        6.3525,
+        3.3418,
+        2.2022,
+        1.4553,
+        1.1011,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "tier": 5,
+      "name": "Motherlode",
+      "betDrill": 2500.0,
+      "durationSeconds": 28800,
+      "tray": 62,
+      "enabled": true,
+      "expectedBaseDrill": 2387.5778865,
+      "expectedOrePerCycle": [
+        0.0,
+        0.0,
+        17.6204,
+        12.3318,
+        11.594,
+        8.1716,
+        4.6128,
+        3.1186,
+        2.294,
+        1.55,
+        0.682,
+        0.0248
+      ]
+    }
+  ],
+  "plot": {
+    "maxLevel": 20,
+    "weights": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      7,
+      9,
+      12,
+      16,
+      20,
+      26,
+      33,
+      40,
+      49,
+      59,
+      69,
+      81,
+      94,
+      108,
+      124,
+      195
+    ],
+    "cutsBps": [
+      0,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      175,
+      190,
+      205,
+      220,
+      235,
+      250,
+      265,
+      280,
+      300,
+      330,
+      370,
+      430,
+      500
+    ],
+    "costs": [
+      null,
+      null,
+      [
+        {
+          "id": 0,
+          "amount": "60"
+        },
+        {
+          "id": 1,
+          "amount": "25"
+        },
+        {
+          "id": 2,
+          "amount": "10"
+        }
+      ],
+      [
+        {
+          "id": 0,
+          "amount": "90"
+        },
+        {
+          "id": 1,
+          "amount": "40"
+        },
+        {
+          "id": 2,
+          "amount": "20"
+        },
+        {
+          "id": 3,
+          "amount": "5"
+        }
+      ],
+      [
+        {
+          "id": 0,
+          "amount": "120"
+        },
+        {
+          "id": 1,
+          "amount": "55"
+        },
+        {
+          "id": 2,
+          "amount": "25"
+        },
+        {
+          "id": 3,
+          "amount": "10"
+        },
+        {
+          "id": 4,
+          "amount": "5"
+        }
+      ],
+      [
+        {
+          "id": 1,
+          "amount": "75"
+        },
+        {
+          "id": 2,
+          "amount": "45"
+        },
+        {
+          "id": 3,
+          "amount": "25"
+        },
+        {
+          "id": 4,
+          "amount": "20"
+        },
+        {
+          "id": 5,
+          "amount": "5"
+        }
+      ],
+      [
+        {
+          "id": 1,
+          "amount": "100"
+        },
+        {
+          "id": 2,
+          "amount": "60"
+        },
+        {
+          "id": 3,
+          "amount": "35"
+        },
+        {
+          "id": 4,
+          "amount": "30"
+        },
+        {
+          "id": 5,
+          "amount": "15"
+        }
+      ],
+      [
+        {
+          "id": 2,
+          "amount": "90"
+        },
+        {
+          "id": 3,
+          "amount": "55"
+        },
+        {
+          "id": 4,
+          "amount": "45"
+        },
+        {
+          "id": 5,
+          "amount": "25"
+        }
+      ],
+      [
+        {
+          "id": 3,
+          "amount": "80"
+        },
+        {
+          "id": 4,
+          "amount": "70"
+        },
+        {
+          "id": 5,
+          "amount": "50"
+        },
+        {
+          "id": 6,
+          "amount": "15"
+        }
+      ],
+      [
+        {
+          "id": 3,
+          "amount": "100"
+        },
+        {
+          "id": 4,
+          "amount": "90"
+        },
+        {
+          "id": 5,
+          "amount": "70"
+        },
+        {
+          "id": 6,
+          "amount": "25"
+        }
+      ],
+      [
+        {
+          "id": 4,
+          "amount": "110"
+        },
+        {
+          "id": 5,
+          "amount": "80"
+        },
+        {
+          "id": 6,
+          "amount": "30"
+        },
+        {
+          "id": 7,
+          "amount": "15"
+        }
+      ],
+      [
+        {
+          "id": 4,
+          "amount": "130"
+        },
+        {
+          "id": 5,
+          "amount": "95"
+        },
+        {
+          "id": 6,
+          "amount": "40"
+        },
+        {
+          "id": 7,
+          "amount": "25"
+        }
+      ],
+      [
+        {
+          "id": 5,
+          "amount": "100"
+        },
+        {
+          "id": 6,
+          "amount": "50"
+        },
+        {
+          "id": 7,
+          "amount": "30"
+        },
+        {
+          "id": 8,
+          "amount": "6"
+        }
+      ],
+      [
+        {
+          "id": 5,
+          "amount": "115"
+        },
+        {
+          "id": 6,
+          "amount": "50"
+        },
+        {
+          "id": 7,
+          "amount": "40"
+        },
+        {
+          "id": 8,
+          "amount": "10"
+        }
+      ],
+      [
+        {
+          "id": 6,
+          "amount": "60"
+        },
+        {
+          "id": 7,
+          "amount": "45"
+        },
+        {
+          "id": 8,
+          "amount": "14"
+        },
+        {
+          "id": 9,
+          "amount": "5"
+        }
+      ],
+      [
+        {
+          "id": 6,
+          "amount": "60"
+        },
+        {
+          "id": 7,
+          "amount": "45"
+        },
+        {
+          "id": 8,
+          "amount": "18"
+        },
+        {
+          "id": 9,
+          "amount": "8"
+        }
+      ],
+      [
+        {
+          "id": 7,
+          "amount": "40"
+        },
+        {
+          "id": 8,
+          "amount": "22"
+        },
+        {
+          "id": 9,
+          "amount": "12"
+        },
+        {
+          "id": 10,
+          "amount": "1"
+        }
+      ],
+      [
+        {
+          "id": 7,
+          "amount": "40"
+        },
+        {
+          "id": 8,
+          "amount": "26"
+        },
+        {
+          "id": 9,
+          "amount": "15"
+        },
+        {
+          "id": 10,
+          "amount": "2"
+        }
+      ],
+      [
+        {
+          "id": 8,
+          "amount": "28"
+        },
+        {
+          "id": 9,
+          "amount": "18"
+        },
+        {
+          "id": 10,
+          "amount": "3"
+        }
+      ],
+      [
+        {
+          "id": 8,
+          "amount": "16"
+        },
+        {
+          "id": 9,
+          "amount": "22"
+        },
+        {
+          "id": 10,
+          "amount": "3"
+        }
+      ],
+      [
+        {
+          "id": 8,
+          "amount": "15"
+        },
+        {
+          "id": 9,
+          "amount": "10"
+        },
+        {
+          "id": 10,
+          "amount": "3"
+        },
+        {
+          "id": 11,
+          "amount": "1"
+        }
+      ]
+    ]
+  },
+  "runtime": {
+    "configVersion": "9",
+    "plantingEnabled": true,
+    "active": true,
+    "oilEnabled": true,
+    "oilRatesBps": [
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "processorBonusesBps": [
+      5,
+      10,
+      20
+    ],
+    "rentalEconomy": {
+      "minimumBps": 10,
+      "maximumBps": 25,
+      "selfMiningBonus": true
+    }
+  },
+  "fees": {
+    "oreMarketSellerBps": 500,
+    "oreMarketSellerReceivesBps": 9500,
+    "source": "Project Mars in-app handbook baseline; seller receives 95% of listed ore sale price."
+  },
+  "oreLabels": [
+    "Ore 0",
+    "Ore 1",
+    "Ore 2",
+    "Ore 3",
+    "Ore 4",
+    "Ore 5",
+    "Ore 6",
+    "Ore 7",
+    "Ore 8",
+    "Ore 9",
+    "Ore 10",
+    "Core Blue (Ore 11)"
+  ]
+}

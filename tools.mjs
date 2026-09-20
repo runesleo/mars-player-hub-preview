@@ -1,3 +1,4 @@
+import {t} from "./i18n.mjs";
 import {loadJSON,fmt,pct,dateText,esc} from "./common.mjs";
 import {calcPnl,calcRigEconomics,calcOreVsMine,calcUpgrade,upgradeRequirements,calcEpochScenario} from "./calcs.mjs";
 
@@ -60,7 +61,7 @@ function wireCopy(key){
   b.addEventListener("click",async()=>{
     if(!shareText[key])return;
     try{
-      await navigator.clipboard.writeText(shareText[key]);
+      await navigator.clipboard.writeText(t(shareText[key]));
       b.textContent="已复制";
       setTimeout(()=>b.textContent=key==="epoch"?"复制分享摘要":"复制结果摘要",1400);
     }catch(e){b.textContent="复制失败";}

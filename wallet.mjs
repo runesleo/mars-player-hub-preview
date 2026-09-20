@@ -1,3 +1,4 @@
+import {t} from "./i18n.mjs";
 import {loadJSON,fmt,dateText,esc} from "./common.mjs";
 import {readWallet,isEvmAddress,shortAddress} from "./wallet-reader.mjs";
 
@@ -76,7 +77,7 @@ copyBtn.addEventListener("click",async()=>{
     "Mars Player Hub"
   ].join("\n");
   try{
-    await navigator.clipboard.writeText(text);
+    await navigator.clipboard.writeText(t(text));
     copyBtn.textContent="已复制";
     setTimeout(()=>copyBtn.textContent="复制库存摘要",1400);
   }catch(e){copyBtn.textContent="复制失败";}
